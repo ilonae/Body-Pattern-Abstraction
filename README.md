@@ -20,8 +20,8 @@ The answer is a two-stage pipeline. First, a preprocessing step cleans and norma
 
 ```
 .ply / .obj / .npy  ──┐
-                       ├──> loader.py ──> preprocess.py
-synthetic generator ──┘         │
+                      ├──> loader.py ──> preprocess.py
+synthetic generator ──┘          │
                                  ▼
                     ┌────────────┴────────────────┐
                     │ Heuristic                   │ Learned
