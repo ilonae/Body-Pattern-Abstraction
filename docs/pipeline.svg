@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="860" height="520" fill="#0f1117"/>
+
+  <!-- Title -->
+  <text x="430" y="38" text-anchor="middle" fill="#e8eaf6" font-size="17" font-weight="bold">Body Scan → Pattern Parameters Pipeline</text>
+
+  <!-- ── LANE LABELS ── -->
+  <text x="18" y="100" fill="#7986cb" font-size="11" transform="rotate(-90,18,100)" text-anchor="middle">INPUT</text>
+  <text x="18" y="230" fill="#7986cb" font-size="11" transform="rotate(-90,18,230)" text-anchor="middle">PREPROCESS</text>
+  <text x="18" y="360" fill="#7986cb" font-size="11" transform="rotate(-90,18,360)" text-anchor="middle">DETECTION</text>
+  <text x="18" y="470" fill="#7986cb" font-size="11" transform="rotate(-90,18,470)" text-anchor="middle">OUTPUT</text>
+
+  <!-- Lane dividers -->
+  <line x1="40" y1="60"  x2="840" y2="60"  stroke="#2a2d3e" stroke-width="1"/>
+  <line x1="40" y1="155" x2="840" y2="155" stroke="#2a2d3e" stroke-width="1"/>
+  <line x1="40" y1="285" x2="840" y2="285" stroke="#2a2d3e" stroke-width="1"/>
+  <line x1="40" y1="415" x2="840" y2="415" stroke="#2a2d3e" stroke-width="1"/>
+
+  <!-- ===== ROW 1: Input formats ===== -->
+  <!-- .ply box -->
+  <rect x="55"  y="72" width="100" height="68" rx="8" fill="#1a237e" stroke="#3949ab" stroke-width="1.5"/>
+  <text x="105" y="98"  text-anchor="middle" fill="#e8eaf6" font-size="13" font-weight="bold">.ply</text>
+  <text x="105" y="114" text-anchor="middle" fill="#9fa8da" font-size="10">iPhone LiDAR</text>
+  <text x="105" y="128" text-anchor="middle" fill="#9fa8da" font-size="10">Artec / RealSense</text>
+
+  <!-- .obj box -->
+  <rect x="175" y="72" width="100" height="68" rx="8" fill="#1a237e" stroke="#3949ab" stroke-width="1.5"/>
+  <text x="225" y="98"  text-anchor="middle" fill="#e8eaf6" font-size="13" font-weight="bold">.obj</text>
+  <text x="225" y="114" text-anchor="middle" fill="#9fa8da" font-size="10">CLO 3D</text>
+  <text x="225" y="128" text-anchor="middle" fill="#9fa8da" font-size="10">Blender / ZBrush</text>
+
+  <!-- .npy box -->
+  <rect x="295" y="72" width="100" height="68" rx="8" fill="#1a237e" stroke="#3949ab" stroke-width="1.5"/>
+  <text x="345" y="98"  text-anchor="middle" fill="#e8eaf6" font-size="13" font-weight="bold">.npy</text>
+  <text x="345" y="114" text-anchor="middle" fill="#9fa8da" font-size="10">Pre-processed</text>
+  <text x="345" y="128" text-anchor="middle" fill="#9fa8da" font-size="10">NumPy arrays</text>
+
+  <!-- .xyz box -->
+  <rect x="415" y="72" width="100" height="68" rx="8" fill="#1a237e" stroke="#3949ab" stroke-width="1.5"/>
+  <text x="465" y="98"  text-anchor="middle" fill="#e8eaf6" font-size="13" font-weight="bold">.xyz</text>
+  <text x="465" y="114" text-anchor="middle" fill="#9fa8da" font-size="10">Generic</text>
+  <text x="465" y="128" text-anchor="middle" fill="#9fa8da" font-size="10">text point clouds</text>
+
+  <!-- Synthetic box -->
+  <rect x="555" y="72" width="140" height="68" rx="8" fill="#1b2a1b" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="625" y="95"  text-anchor="middle" fill="#a5d6a7" font-size="12" font-weight="bold">Synthetic Generator</text>
+  <text x="625" y="111" text-anchor="middle" fill="#81c784" font-size="10">6 disability profiles</text>
+  <text x="625" y="125" text-anchor="middle" fill="#81c784" font-size="10">No scanner needed</text>
+
+  <!-- Arrows row1 → loader -->
+  <line x1="105" y1="140" x2="340" y2="170" stroke="#3949ab" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <line x1="225" y1="140" x2="340" y2="170" stroke="#3949ab" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <line x1="345" y1="140" x2="340" y2="170" stroke="#3949ab" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="465" y1="140" x2="340" y2="170" stroke="#3949ab" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <line x1="625" y1="140" x2="440" y2="170" stroke="#388e3c" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+  <!-- ===== ROW 2: Preprocessing ===== -->
+  <!-- loader.py -->
+  <rect x="255" y="168" width="130" height="50" rx="8" fill="#263238" stroke="#546e7a" stroke-width="1.5"/>
+  <text x="320" y="189" text-anchor="middle" fill="#e8eaf6" font-size="12" font-weight="bold">loader.py</text>
+  <text x="320" y="205" text-anchor="middle" fill="#90a4ae" font-size="10">load_pointcloud()</text>
+
+  <!-- Arrow loader → preprocess -->
+  <line x1="385" y1="193" x2="420" y2="193" stroke="#546e7a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- preprocess.py -->
+  <rect x="420" y="168" width="190" height="50" rx="8" fill="#263238" stroke="#546e7a" stroke-width="1.5"/>
+  <text x="515" y="189" text-anchor="middle" fill="#e8eaf6" font-size="12" font-weight="bold">preprocess.py</text>
+  <text x="515" y="205" text-anchor="middle" fill="#90a4ae" font-size="10">outlier removal · downsample · normalise</text>
+
+  <!-- Arrow preprocess → detection row -->
+  <line x1="515" y1="218" x2="515" y2="290" stroke="#546e7a" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- also feed to left path -->
+  <line x1="420" y1="215" x2="220" y2="295" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+  <!-- ===== ROW 3: Detection — two parallel paths ===== -->
+  <!-- Heuristic path label -->
+  <text x="220" y="282" text-anchor="middle" fill="#ef9a9a" font-size="10" font-style="italic">Heuristic path</text>
+
+  <!-- landmarks.py -->
+  <rect x="90" y="295" width="260" height="54" rx="8" fill="#311b1b" stroke="#c62828" stroke-width="1.5"/>
+  <text x="220" y="316" text-anchor="middle" fill="#ef9a9a" font-size="12" font-weight="bold">landmarks.py</text>
+  <text x="220" y="332" text-anchor="middle" fill="#ef9a9a" font-size="10">LandmarkDetector · geometric heuristics</text>
+  <text x="220" y="344" text-anchor="middle" fill="#b71c1c" font-size="9">no ML — fast, no training needed</text>
+
+  <!-- Learned path label -->
+  <text x="620" y="282" text-anchor="middle" fill="#80cbc4" font-size="10" font-style="italic">Learned path (Phase 2)</text>
+
+  <!-- encoder.py + landmark_net.py -->
+  <rect x="390" y="295" width="460" height="54" rx="8" fill="#0d2b29" stroke="#00796b" stroke-width="1.5"/>
+  <text x="620" y="316" text-anchor="middle" fill="#80cbc4" font-size="12" font-weight="bold">encoder.py + landmark_net.py</text>
+  <text x="620" y="332" text-anchor="middle" fill="#80cbc4" font-size="10">PointNet encoder → MLP head → 7 scalar outputs</text>
+  <text x="620" y="344" text-anchor="middle" fill="#26a69a" font-size="9">trained on synthetic + real scan data</text>
+
+  <!-- Arrows both paths → scan_to_params -->
+  <line x1="220" y1="349" x2="350" y2="420" stroke="#c62828" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="620" y1="349" x2="490" y2="420" stroke="#00796b" stroke-width="1.5" marker-end="url(#arr2)"/>
+
+  <!-- ===== ROW 4: Output ===== -->
+  <!-- scan_to_params.py -->
+  <rect x="280" y="422" width="300" height="70" rx="8" fill="#1a237e" stroke="#7986cb" stroke-width="2"/>
+  <text x="430" y="447" text-anchor="middle" fill="#e8eaf6" font-size="13" font-weight="bold">scan_to_params.py</text>
+  <text x="430" y="463" text-anchor="middle" fill="#9fa8da" font-size="10">ScanToParams.from_landmarks()</text>
+  <text x="430" y="477" text-anchor="middle" fill="#9fa8da" font-size="10">ScanToParams.from_network_output()</text>
+  <text x="430" y="491" text-anchor="middle" fill="#7986cb" font-size="9">→ BodyParams (Level 0-4 per axis)</text>
+
+  <!-- Arrow scan_to_params → external -->
+  <line x1="580" y1="457" x2="730" y2="457" stroke="#7986cb" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <rect x="730" y="430" width="110" height="54" rx="8" fill="#1b2a1b" stroke="#66bb6a" stroke-width="1.5"/>
+  <text x="785" y="451" text-anchor="middle" fill="#a5d6a7" font-size="11" font-weight="bold">diverse-body-</text>
+  <text x="785" y="465" text-anchor="middle" fill="#a5d6a7" font-size="11" font-weight="bold">pattern-adjuster</text>
+  <text x="785" y="479" text-anchor="middle" fill="#81c784" font-size="9">→ DXF / SVG</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#546e7a"/>
+    </marker>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#7986cb"/>
+    </marker>
+  </defs>
+
+</svg>
