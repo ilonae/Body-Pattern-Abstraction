@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "body-pattern-research"
+version = "0.1.0"
+description = "Research repo: point cloud body scan -> sewing pattern parameters"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Ilona Eisenbraun", email = "ilonaeisenbraun@gmail.com"}
+]
+
+# Minimal hard dependencies — torch installed separately
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+]
+
+[project.optional-dependencies]
+ml = [
+    "torch>=2.0.0",
+]
+scan = [
+    "plyfile>=0.8.1",    # PLY file reading
+    "open3d>=0.17.0",    # advanced point cloud processing (Phase 3)
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "matplotlib>=3.7.0",
+]
+notebooks = [
+    "jupyter>=1.0.0",
+    "matplotlib>=3.7.0",
+    "ipywidgets>=8.0.0",
+]
+
+[tool.setuptools]
+packages = ["research",
+            "research.core",
+            "research.pointcloud",
+            "research.models",
+            "research.mapping"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
