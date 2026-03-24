@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" font-family="'Segoe UI', Arial, sans-serif">
+
+  <rect width="860" height="420" fill="#0f1117"/>
+
+  <text x="430" y="36" text-anchor="middle" fill="#e8eaf6" font-size="17" font-weight="bold">BodyParams — Discrete Level System (0–4)</text>
+  <text x="430" y="54" text-anchor="middle" fill="#7986cb" font-size="11">Why levels instead of raw centimetres? Deterministic · Privacy-preserving · Brand-agnostic</text>
+
+  <!-- Level legend -->
+  <rect x="50"  y="68" width="58" height="26" rx="5" fill="#1a2a1a" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="79"  y="85" text-anchor="middle" fill="#a5d6a7" font-size="12" font-weight="bold">L0</text>
+  <rect x="116" y="68" width="58" height="26" rx="5" fill="#142b2b" stroke="#00838f" stroke-width="1.5"/>
+  <text x="145" y="85" text-anchor="middle" fill="#80cbc4" font-size="12" font-weight="bold">L1</text>
+  <rect x="182" y="68" width="58" height="26" rx="5" fill="#1a2540" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="211" y="85" text-anchor="middle" fill="#90caf9" font-size="12" font-weight="bold">L2</text>
+  <rect x="248" y="68" width="58" height="26" rx="5" fill="#2a1a40" stroke="#7b1fa2" stroke-width="1.5"/>
+  <text x="277" y="85" text-anchor="middle" fill="#ce93d8" font-size="12" font-weight="bold">L3</text>
+  <rect x="314" y="68" width="58" height="26" rx="5" fill="#3a1010" stroke="#c62828" stroke-width="1.5"/>
+  <text x="343" y="85" text-anchor="middle" fill="#ef9a9a" font-size="12" font-weight="bold">L4</text>
+
+  <text x="50"  y="106" fill="#5c6bc0" font-size="10">standard</text>
+  <text x="116" y="106" fill="#5c6bc0" font-size="10">mild</text>
+  <text x="182" y="106" fill="#5c6bc0" font-size="10">moderate</text>
+  <text x="248" y="106" fill="#5c6bc0" font-size="10">high</text>
+  <text x="314" y="106" fill="#5c6bc0" font-size="10">maximum</text>
+
+  <!-- Column headers -->
+  <text x="50"  y="135" fill="#546e7a" font-size="10">AXIS</text>
+  <text x="260" y="135" fill="#546e7a" font-size="10">PROFILE EXAMPLES</text>
+  <text x="580" y="135" fill="#546e7a" font-size="10">APPROX DELTA (mm)</text>
+  <line x1="40" y1="140" x2="820" y2="140" stroke="#2a2d3e" stroke-width="1"/>
+
+  <!-- Data rows -->
+  <!-- Row colours: alternating dark background -->
+  <rect x="40" y="143" width="780" height="30" rx="0" fill="#161a24"/>
+  <rect x="40" y="173" width="780" height="30" rx="0" fill="#111520"/>
+  <rect x="40" y="203" width="780" height="30" rx="0" fill="#161a24"/>
+  <rect x="40" y="233" width="780" height="30" rx="0" fill="#111520"/>
+  <rect x="40" y="263" width="780" height="30" rx="0" fill="#161a24"/>
+  <rect x="40" y="293" width="780" height="30" rx="0" fill="#111520"/>
+  <rect x="40" y="323" width="780" height="30" rx="0" fill="#161a24"/>
+  <rect x="40" y="353" width="780" height="30" rx="0" fill="#111520"/>
+  <rect x="40" y="383" width="780" height="30" rx="0" fill="#161a24"/>
+
+  <!-- Rows content -->
+  <!-- hip_level -->
+  <text x="55"  y="163" fill="#e8eaf6" font-size="11" font-weight="bold">hip_level</text>
+  <text x="260" y="163" fill="#9fa8da" font-size="10">Wheelchair seated spread · plus size · post-pregnancy</text>
+  <!-- level dots -->
+  <circle cx="583" cy="158" r="7" fill="#388e3c"/><text x="583" cy="158" text-anchor="middle" fill="#a5d6a7" font-size="8" dy="3">0</text>
+  <circle cx="613" cy="158" r="7" fill="#00838f"/><text x="613" cy="158" text-anchor="middle" fill="#80cbc4" font-size="8" dy="3">+10</text>
+  <circle cx="648" cy="158" r="7" fill="#1565c0"/><text x="648" cy="158" text-anchor="middle" fill="#90caf9" font-size="8" dy="3">+20</text>
+  <circle cx="683" cy="158" r="7" fill="#7b1fa2"/><text x="683" cy="158" text-anchor="middle" fill="#ce93d8" font-size="8" dy="3">+30</text>
+  <circle cx="718" cy="158" r="7" fill="#c62828"/><text x="718" cy="158" text-anchor="middle" fill="#ef9a9a" font-size="8" dy="3">+40</text>
+
+  <!-- left_leg_step -->
+  <text x="55"  y="193" fill="#e8eaf6" font-size="11" font-weight="bold">left_leg_step</text>
+  <text x="260" y="193" fill="#9fa8da" font-size="10">Lower-limb prosthesis (left) · limb length discrepancy</text>
+  <circle cx="583" cy="188" r="7" fill="#388e3c"/>
+  <circle cx="613" cy="188" r="7" fill="#00838f"/>
+  <circle cx="648" cy="188" r="7" fill="#1565c0"/>
+  <circle cx="683" cy="188" r="7" fill="#7b1fa2"/>
+  <circle cx="718" cy="188" r="7" fill="#c62828"/>
+  <text x="745" y="193" fill="#7986cb" font-size="10">+10mm per level (asymmetric)</text>
+
+  <!-- right_upper_arm_step -->
+  <text x="55"  y="223" fill="#e8eaf6" font-size="11" font-weight="bold">right_upper_arm_step</text>
+  <text x="260" y="223" fill="#9fa8da" font-size="10">Upper-limb prosthesis (right) · socket bulk allowance</text>
+  <circle cx="583" cy="218" r="7" fill="#388e3c"/>
+  <circle cx="613" cy="218" r="7" fill="#00838f"/>
+  <circle cx="648" cy="218" r="7" fill="#1565c0"/>
+  <circle cx="683" cy="218" r="7" fill="#7b1fa2"/>
+  <circle cx="718" cy="218" r="7" fill="#c62828"/>
+  <text x="745" y="223" fill="#7986cb" font-size="10">+10mm per level (sleeve width)</text>
+
+  <!-- seated_back_rise -->
+  <text x="55"  y="253" fill="#e8eaf6" font-size="11" font-weight="bold">seated_back_rise</text>
+  <text x="260" y="253" fill="#9fa8da" font-size="10">Full-time wheelchair · extended seating · forward tilt</text>
+  <circle cx="583" cy="248" r="7" fill="#388e3c"/>
+  <circle cx="613" cy="248" r="7" fill="#00838f"/>
+  <circle cx="648" cy="248" r="7" fill="#1565c0"/>
+  <circle cx="683" cy="248" r="7" fill="#7b1fa2"/>
+  <circle cx="718" cy="248" r="7" fill="#c62828"/>
+  <text x="745" y="253" fill="#7986cb" font-size="10">+10mm per level (back rise)</text>
+
+  <!-- height_level -->
+  <text x="55"  y="283" fill="#e8eaf6" font-size="11" font-weight="bold">height_level</text>
+  <text x="260" y="283" fill="#9fa8da" font-size="10">Dwarfism (proportional/disproportional) · short stature</text>
+  <circle cx="583" cy="278" r="7" fill="#388e3c"/>
+  <circle cx="613" cy="278" r="7" fill="#00838f"/>
+  <circle cx="648" cy="278" r="7" fill="#1565c0"/>
+  <circle cx="683" cy="278" r="7" fill="#7b1fa2"/>
+  <circle cx="718" cy="278" r="7" fill="#c62828"/>
+  <text x="745" y="283" fill="#7986cb" font-size="10">-30mm per level (overall length)</text>
+
+  <!-- inseam_level -->
+  <text x="55"  y="313" fill="#e8eaf6" font-size="11" font-weight="bold">inseam_level</text>
+  <text x="260" y="313" fill="#9fa8da" font-size="10">Dwarfism (disproportional) · short legs · seated posture</text>
+  <circle cx="583" cy="308" r="7" fill="#388e3c"/>
+  <circle cx="613" cy="308" r="7" fill="#00838f"/>
+  <circle cx="648" cy="308" r="7" fill="#1565c0"/>
+  <circle cx="683" cy="308" r="7" fill="#7b1fa2"/>
+  <circle cx="718" cy="308" r="7" fill="#c62828"/>
+  <text x="745" y="313" fill="#7986cb" font-size="10">-15mm per level (trouser length)</text>
+
+  <!-- shoulder_width_level -->
+  <text x="55"  y="343" fill="#e8eaf6" font-size="11" font-weight="bold">shoulder_width_level</text>
+  <text x="260" y="343" fill="#9fa8da" font-size="10">Broad-shouldered · occupational wear · shoulder pads</text>
+  <circle cx="583" cy="338" r="7" fill="#388e3c"/>
+  <circle cx="613" cy="338" r="7" fill="#00838f"/>
+  <circle cx="648" cy="338" r="7" fill="#1565c0"/>
+  <circle cx="683" cy="338" r="7" fill="#7b1fa2"/>
+  <circle cx="718" cy="338" r="7" fill="#c62828"/>
+  <text x="745" y="343" fill="#7986cb" font-size="10">+5mm per level (back width)</text>
+
+  <!-- weight_level -->
+  <text x="55"  y="373" fill="#e8eaf6" font-size="11" font-weight="bold">weight_level</text>
+  <text x="260" y="373" fill="#9fa8da" font-size="10">General circumference grading · torso volume</text>
+  <circle cx="583" cy="368" r="7" fill="#388e3c"/>
+  <circle cx="613" cy="368" r="7" fill="#00838f"/>
+  <circle cx="648" cy="368" r="7" fill="#1565c0"/>
+  <circle cx="683" cy="368" r="7" fill="#7b1fa2"/>
+  <circle cx="718" cy="368" r="7" fill="#c62828"/>
+  <text x="745" y="373" fill="#7986cb" font-size="10">+10mm per level (circumference)</text>
+
+  <!-- forward_tilt_level -->
+  <text x="55"  y="403" fill="#e8eaf6" font-size="11" font-weight="bold">forward_tilt_level</text>
+  <text x="260" y="403" fill="#9fa8da" font-size="10">Kyphosis · forward trunk tilt · postural deviation</text>
+  <circle cx="583" cy="398" r="7" fill="#388e3c"/>
+  <circle cx="613" cy="398" r="7" fill="#00838f"/>
+  <circle cx="648" cy="398" r="7" fill="#1565c0"/>
+  <circle cx="683" cy="398" r="7" fill="#7b1fa2"/>
+  <circle cx="718" cy="398" r="7" fill="#c62828"/>
+  <text x="745" y="403" fill="#7986cb" font-size="10">+5mm per level (back length)</text>
+
+</svg>
